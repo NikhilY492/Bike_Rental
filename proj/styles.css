@@ -274,7 +274,50 @@ section{
 }
 
 
+.services .box-container .box:hover p {
+    color: #eee;
+}
 
+.featured .featured-slider {
+    padding: 16px;
+    padding-bottom: 64px;
+}
+
+.featured .featured-slider .box {
+    text-align: center;
+    padding: 32px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: 8px;
+}
+
+.featured .featured-slider .box img {
+    width: 100%;
+    padding: 32px;
+}
+
+.featured .featured-slider .box:hover img {
+    transform: scale(0.9);
+}
+
+.featured .featured-slider .box h3 {
+    font-size: 35px;
+    color: var(--black);
+}
+
+.featured .featured-slider .box .stars {
+    padding: 16px 0;
+}
+
+.featured .featured-slider .box .stars i {
+    font-size: 27px;
+    color: var(--yellow);
+}
+
+.featured .featured-slider .box .price {
+    font-size: 40px;
+    color: var(--black);
+}
 
 
 
