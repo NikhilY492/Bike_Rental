@@ -1,13 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 :root{
-    --yellow:#f9d806;
-    --light-yellow:#ffee80;
+    --yellow:#0077cc;
+    --light-yellow:#33aaff;
     --black:#130f40;
     --light-color:#666;
     --border: .1rem solid rgba(0,0,0,.1);
     --box-shadow:0 .5rem 1 rem rgba(0,0,0,.1);
 }
+
+
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -238,7 +240,7 @@ section{
     text-align: center;
 }
 .vehicle .vehicles-slider .box img{
-    width: 100%;
+    width: 75%;
     /* opacity: .5;
     transform: scale(.8); */
 }
