@@ -37,11 +37,12 @@
         <input type="email" placeholder="Enter email here" class="box">
         <input type="password" placeholder="Enter password here" class="box">
         <input type="submit" value="Login now" class="btn">
-        <p>don't have an account <a href="#">Create</a></p>
+        <p>don't have an account <a href="#">Create One</a></p>
     </form>
 </div>
 
 <!-- close login here -->
+
 <!-- home section starts here -->
 <section class="home" id="home">
     <h1 class="home-parallax" data-speed="-2">Find your Bikes</h1>
@@ -89,7 +90,7 @@
             <p>Fully Serviced bikes</p>
         </div>
     </div>
-    <div class="icons">
+    <div class="icons"> 
         <i class="fas fa-fire"></i>
         <div class="content">
             <h3></h3>
@@ -97,6 +98,16 @@
         </div>
     </div>
 </section>
+<!-- checkoutpage -->
+<div class="checkout">
+    <img id="checkoutBikeImage">
+    <p id="checkoutBikeDetails"></p>
+    <button id="proceedToPayBtn" class="btn">Proceed to Pay</button>
+
+
+    <span class="fas fa-times" id="close-checkout" onclick=""></span>
+</div>
+
 
 <!-- vehicle section begins -->
 <section class="vehicle" id="vehicles">
@@ -104,16 +115,20 @@
     <div class="vehicles-slider">
         <div class="wrapper">
             <div class="box">
-                <img src="b1.jpg" alt="">
+                <img id="bikeImage" src="b1.jpg" alt="">
                 <div class="price"><span>price: </span> ₹650/Day</div>
-                <p>
+                <p id="bikeDetails">
                     <span class="fas fa-circle"></span>Insuranced
                     <span class="fas fa-circle"></span>2021
                     <span class="fas fa-circle"></span>Gearless
                     <span class="fas fa-circle"></span>petrol
                     <span class="fas fa-circle"></span>100km Travelled
                 </p>
-                <a href="" class="btn">check out</a>
+                <div id="check">
+                    <a href="webpages/webpage1.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+
+                </div>
+                
             </div>
 
             <div class="box">
@@ -126,7 +141,7 @@
                     <span class="fas fa-circle"></span>petrol
                     <span class="fas fa-circle"></span>90km Travelled
                 </p>
-                <a href="" class="btn">check out</a>
+                <a href="webpages/webpage2.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
             </div>
 
             <div class="box">
@@ -139,7 +154,7 @@
                     <span class="fas fa-circle"></span>petrol
                     <span class="fas fa-circle"></span>100km Travelled
                 </p>
-                <a href="" class="btn">check out</a>
+                <a href="webpages/webpage3.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
             </div>
 
             <div class="box">
@@ -152,7 +167,7 @@
                     <span class="fas fa-circle"></span>petrol
                     <span class="fas fa-circle"></span>100km Travelled
                 </p>
-                <a href="" class="btn">check out</a>
+                <a href="webpages/webpage4.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
             </div>
 
             <div class="box">
@@ -165,7 +180,7 @@
                     <span class="fas fa-circle"></span>petrol
                     <span class="fas fa-circle"></span>100km Travelled
                 </p>
-                <a href="" class="btn">check out</a>
+                <a href="webpages/webpage5.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
             </div>
 
             <div class="box">
@@ -178,7 +193,7 @@
                     <span class="fas fa-circle"></span>petrol
                     <span class="fas fa-circle"></span>100km Travelled
                 </p>
-                <a href="" class="btn">check out</a>
+                <a href="webpages/webpage6.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
             </div>
         </div>
     </div>
