@@ -29,3 +29,17 @@ function calculateDateDifference() {
 function closeTab() {
     window.close();
 }
+function validateForm() {
+    const location = document.getElementById('location').value;
+    const pickDate = document.getElementById('pick').value;
+    const dropDate = document.getElementById('drop').value;
+
+    if (!location || !pickDate || !dropDate) {
+        alert('Please fill in all fields before proceeding.');
+        return false; // Prevent the link from working
+} else {
+        // Change the href of the payment link
+        document.getElementById('payment').href = '../paymentpage.html';
+        return true; // Allow the link to work
+    }
+}

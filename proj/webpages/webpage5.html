@@ -13,8 +13,8 @@
     <div class="bike-container">
         <div class="bike">
             <span class="fas fa-times" id="close" onclick="closeTab()"></span>
-            <h3>Bike Name</h3>
-            <img id="bikeImage" src="../b5.jpeg" alt="">
+            <h3>Honda activa 5g</h3>
+            <img id="bikeImage" src="../assets/b5.png" alt="">
             <div class="price"><span>price: </span> ₹1500/Day</div>
             <p id="bikeDetails">
                 <span class="fas fa-circle"></span>Insuranced
@@ -26,7 +26,8 @@
             
         </div>
         <div class="form-details">
-            <form>
+            <form id="location">
+
                 
                 
                 <select class="box">
@@ -52,7 +53,7 @@
                     </div>
 
                 <p id="cash">Total Amount : </p>
-                <button class="btn" id="payment">Proceed to Pay</button>
+                <a href="#"  id="payment" class="btn" onclick="validateForm()">Proceed to Pay</a>
             </div>
                 
             </form>
