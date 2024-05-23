@@ -21,6 +21,7 @@ function calculateDateDifference() {
         if (dayDifference >= 0) {
             const totalAmount = dayDifference * pricePerDay;
             document.getElementById('cash').innerText = `Total Amount: ₹${totalAmount}`;
+            localStorage.setItem('totalAmount', totalAmount);
         } else {
             document.getElementById('cash').innerText = 'Total Amount: Drop date must be after Pickup date';
         }
@@ -29,6 +30,8 @@ function calculateDateDifference() {
 function closeTab() {
     window.close();
 }
+
+
 function validateForm() {
     const location = document.getElementById('location').value;
     const pickDate = document.getElementById('pick').value;
@@ -42,4 +45,24 @@ function validateForm() {
         document.getElementById('payment').href = '../paymentpage.html';
         return true; // Allow the link to work
     }
+}
+
+// for payment section
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to retrieve total amount from local storage and add it to the money attribute
+    function displayAmount() {
+        const totalAmount = localStorage.getItem('totalAmount');
+        if (totalAmount) {
+            document.getElementById('money').innerText = `Total Amount to be paid: ₹${totalAmount}`;
+        } else {
+            document.getElementById('money').innerText = 'Total Amount to be paid:: N/A';
+        }
+    }
+
+    // Call the function to display the total amount after the page loads
+    displayAmount();
+});
+function displayAmount() {
+    const totalAmount = localStorage.getItem('totalAmount');
+    document.getElementById('money').innerText = `Total Amount: ₹${totalAmount}`;
 }

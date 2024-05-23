@@ -87,3 +87,7 @@ slidesPerView: 2,
 },
 },
 });
+
+
+
+// for payment page
