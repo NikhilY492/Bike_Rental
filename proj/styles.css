@@ -345,6 +345,7 @@ section{
     box-shadow: var(--box-shadow);
     border: var(--border);
     border-radius: 8px;
+    height: auto;
 }
 
 .featured .featured-slider .box img {
@@ -371,6 +372,7 @@ section{
 }
 
 .featured .featured-slider .box .price {
+    padding: auto;
     font-size: 40px;
     color: var(--black);
 }
@@ -378,7 +380,7 @@ section{
 .newsletter{
     padding: 6rem 2rem;
     text-align: center;
-    background:url(../../Bike_Rental/proj/letter-bg.jpg);
+    background:url(../../Bike_Rental/proj/assets/letter-bg.jpg);
     background-position: center;
     background-size: cover;
 }
