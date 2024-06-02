@@ -211,7 +211,8 @@ section{
 }
 .home img{
     width: 100%;
-    margin: 1rem 0;
+    margin: auto;
+    height: 600px;
 }
 .box {
     flex: 1;
@@ -578,9 +579,6 @@ section{
     color: var(--black);
     cursor: pointer;
 }
-
-
-
 
 
 
