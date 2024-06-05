@@ -18,7 +18,21 @@ document.querySelector('#close-sign-form').onclick=() =>{
     document.querySelector('.sign-form-container').classList.remove('active')
     document.querySelector('.login-form-container').classList.remove('active')
 }
+function login(){
+    var username = document.querySelector('#username').value;
+    var password = document.querySelector('#password').value;
 
+    if (username.trim() !== "" && password.trim() !== "") {
+        localStorage.setItem("username", username);
+        window.open('../proj/loggedin.html', '_self');
+    } else {
+        window.alert("username or password is wrong");
+    }
+    return false; // prevent form submission
+}
+function success(){
+    window.alert("Account Created Successfully")
+}
 //swiper starts here//
 
 var swiper = new Swiper (".featured-slider",{
@@ -95,5 +109,7 @@ var swiper = new Swiper (".vehicles-slider",{
             prevEl: ".swiper-button-prev",
         }
         });
-
+function hmmm(){
+    window.alert("User must be logged in to proceed")
+}
 // for payment page

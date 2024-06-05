@@ -6,7 +6,7 @@
     <title>Bike rental website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="script1.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -23,20 +23,27 @@
         <a href="#contact us">contact</a>
         
     </nav>
-    <div id="login">
-        <button class="btn">Login</button>
-        <i class="far fa-user"></i>
+    <div class="user">
+    <p id="disp" style="float: right;"></p>
+    <div class="dropdown">
+        <i class="fas fa-user dropbtn"></i>
+        <div class="dropdown-content">
+          <a href="#" id="disp" style="float: right;"></a>
+          <a href="#" onclick="window.location.href='index.html'">Logout</a>
+        </div>
+      </div>
+    </div>
     </div>
    </header>
     <!-- header ends -->
 <!-- login form -->
 <div class="login-form-container">
     <span class="fas fa-times" id="close-login-form" onclick=""></span>
-    <form id="login-form" action="">
+    <form action="">
         <h3>user login</h3>
-        <input id="username" type="text" placeholder="Enter Username here" class="box">
-        <input id="password" type="password" placeholder="Enter Password here" class="box">
-        <a id="login" class="btn" onclick="login()" href="#" >Login</a>
+        <input type="username" placeholder="Enter Username here" class="box">
+        <input type="password" placeholder="Enter Password here" class="box">
+        <input type="submit" value="Login now" class="btn">
         <p>don't have an account <a href="#" id="signup">Create One</a></p>
     </form>
 </div>
@@ -49,7 +56,7 @@
         <input type="UName" placeholder="Enter your Username here" class="box">
         <input type="password" placeholder="Enter Password here" class="box">
         <input type="password1" placeholder="Retype Password" class="box">
-        <input type="submit" value="Create Account" class="btn" onclick="success()">
+        <input type="submit" value="Create Account" class="btn">
         
     </form>
 </div>
@@ -127,7 +134,7 @@
 <!-- vehicle section begins -->
 <section class="featured" id="featured">
     <h1 class="heading"> popular<span>vehicles</span></h1>
-    <div class="swiper featured-slider" id="vehicles">
+    <div class="swiper featured-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide box">
                 <img id="bikeImage" src="assets/b1.jpg" alt="">
@@ -140,7 +147,7 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
                 <div id="check">
-                    <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>
+                    <a href="webpages/webpage1.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
 
                 </div>
                 
@@ -155,7 +162,8 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>90km Travelled<br>
                 </p>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage2.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b3.png">
@@ -167,7 +175,8 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage3.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b4.png" alt="">
@@ -179,7 +188,8 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage4.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b5.png" alt="">
@@ -191,7 +201,8 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage5.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b6.png" alt="">
@@ -203,7 +214,8 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage6.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
         </div>
     </div>
 </section>
@@ -224,7 +236,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage11.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike2.png" alt="">
@@ -237,7 +250,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1450/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage12.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike3.png" alt="">
@@ -250,7 +264,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1300/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage13.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             
             <div class="swiper-slide box">
@@ -264,7 +279,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage14.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             
             <div class="swiper-slide box">
@@ -278,7 +294,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1800/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage15.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
 
             <div class="swiper-slide box">
@@ -292,7 +309,8 @@
                 <i class="fas fa-star"></i>
                 </div>
                 <div class="price">₹2300/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage16).html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
 
             <div class="swiper-slide box">
@@ -306,7 +324,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage17.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
 
             <div class="swiper-slide box">
@@ -320,7 +339,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage18.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
 
             <div class="swiper-slide box">
@@ -334,7 +354,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage11.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike2.png" alt="">
@@ -347,7 +368,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1450/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage12.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike3.png" alt="">
@@ -360,7 +382,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1300/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage13.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             
             <div class="swiper-slide box">
@@ -374,7 +397,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage14.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
             
             
             <div class="swiper-slide box">
@@ -388,7 +412,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1800/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage15.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
 
             <div class="swiper-slide box">
@@ -402,7 +427,8 @@
                 <i class="fas fa-star"></i>
                 </div>
                 <div class="price">₹2300/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage16).html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
 
             <div class="swiper-slide box">
@@ -416,7 +442,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage17.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
 
 
             <div class="swiper-slide box">
@@ -430,7 +457,8 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
+                <a href="webpages/webpage18.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -602,16 +630,6 @@
             <input type="submit" value="send message" class="btn">
         </form>
     </div>
-
-    <div id="contact-component"></div>
-//react js code
-    <!-- React component code -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script type="module">
-        import Contact from './contact.js'; // Ensure correct path to contact.js
-        ReactDOM.render(React.createElement(Contact), document.getElementById('contact-component'));
-    </script>
 </section>
 <!-- contact fin -->
 <section class="footer">
