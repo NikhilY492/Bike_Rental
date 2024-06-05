@@ -26,7 +26,7 @@ var swiper = new Swiper (".featured-slider",{
     grabCursor:true,
     centeredSlides:true,
     autoplay: {
-    delay: 3000,
+    delay: 10000,
     disableOnInteraction: false,
     },
     navigation: {
@@ -62,7 +62,7 @@ var swiper = new Swiper (".vehicles-slider",{
         grabCursor:true,
         centeredSlides:true,
         autoplay: {
-        delay: 3000,
+        delay: 10000,
         disableOnInteraction: false,
         },
         pagination: {
