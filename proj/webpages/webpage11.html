@@ -26,10 +26,10 @@
             
         </div>
         <div class="form-details">
-            <form>
+            <form id="rentalForm">
                 
                 
-                <select class="box">
+                <select class="box" id="location">
                     <option >Enter your location</option>
                     <option value="option1">Hyderabad</option>
                     <option value="option2">Kayamkulam</option>
@@ -52,7 +52,7 @@
                     </div>
 
                 <p id="cash">Total Amount : </p>
-                <button class="btn" id="payment">Proceed to Pay</button>
+                <button class="btn" id="payment" onclick="validateForm()">Proceed to Pay</button>
             </div>
                 
             </form>

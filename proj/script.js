@@ -113,3 +113,6 @@ function hmmm(){
     window.alert("User must be logged in to proceed")
 }
 // for payment page
+document.querySelector('#gojo').onclick=() =>{
+    document.querySelector('.chatbot').classList.toggle('active')
+}
