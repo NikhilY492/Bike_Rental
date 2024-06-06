@@ -18,6 +18,18 @@ document.querySelector('#close-sign-form').onclick=() =>{
     document.querySelector('.sign-form-container').classList.remove('active')
     document.querySelector('.login-form-container').classList.remove('active')
 }
+document.getElementById("open-popup-btn").addEventListener("click",function() {
+	const emailInput = document.getElementById('email');
+        const email = emailInput.value;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        
+        if (emailPattern.test(email)) {
+            alert('Thank You for subscribing to us look out to your mail for daily updates regarding us.');
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    }
+);
 function login(){
     var username = document.querySelector('#username').value;
     var password = document.querySelector('#password').value;
