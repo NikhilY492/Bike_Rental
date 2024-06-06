@@ -32,11 +32,11 @@
 <!-- login form -->
 <div class="login-form-container">
     <span class="fas fa-times" id="close-login-form" onclick=""></span>
-    <form action="">
+    <form id="login-form" action="">
         <h3>user login</h3>
-        <input type="username" placeholder="Enter Username here" class="box">
-        <input type="password" placeholder="Enter Password here" class="box">
-        <input type="submit" value="Login now" class="btn">
+        <input id="username" type="text" placeholder="Enter Username here" class="box">
+        <input id="password" type="password" placeholder="Enter Password here" class="box">
+        <a id="login" class="btn" onclick="login()" href="#" >Login</a>
         <p>don't have an account <a href="#" id="signup">Create One</a></p>
     </form>
 </div>
@@ -49,7 +49,7 @@
         <input type="UName" placeholder="Enter your Username here" class="box">
         <input type="password" placeholder="Enter Password here" class="box">
         <input type="password1" placeholder="Retype Password" class="box">
-        <input type="submit" value="Create Account" class="btn">
+        <input type="submit" value="Create Account" class="btn" onclick="success()">
         
     </form>
 </div>
@@ -127,7 +127,7 @@
 <!-- vehicle section begins -->
 <section class="featured" id="featured">
     <h1 class="heading"> popular<span>vehicles</span></h1>
-    <div class="swiper featured-slider">
+    <div class="swiper featured-slider" id="vehicles">
         <div class="swiper-wrapper">
             <div class="swiper-slide box">
                 <img id="bikeImage" src="assets/b1.jpg" alt="">
@@ -140,7 +140,7 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
                 <div id="check">
-                    <a href="webpages/webpage1.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+                    <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>
 
                 </div>
                 
@@ -155,8 +155,7 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>90km Travelled<br>
                 </p>
-                <a href="webpages/webpage2.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b3.png">
@@ -168,8 +167,7 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="webpages/webpage3.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b4.png" alt="">
@@ -181,8 +179,7 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="webpages/webpage4.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b5.png" alt="">
@@ -194,8 +191,7 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="webpages/webpage5.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
             <div class="swiper-slide box">
                 <img src="assets/b6.png" alt="">
@@ -207,8 +203,7 @@
                     <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
                     <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
                 </p>
-                <a href="webpages/webpage6.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
         </div>
     </div>
 </section>
@@ -229,8 +224,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike2.png" alt="">
@@ -243,8 +237,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1450/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike3.png" alt="">
@@ -257,8 +250,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1300/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             
             <div class="swiper-slide box">
@@ -272,8 +264,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             
             <div class="swiper-slide box">
@@ -287,8 +278,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1800/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
 
             <div class="swiper-slide box">
@@ -302,8 +292,7 @@
                 <i class="fas fa-star"></i>
                 </div>
                 <div class="price">₹2300/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
 
             <div class="swiper-slide box">
@@ -317,8 +306,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
 
             <div class="swiper-slide box">
@@ -332,8 +320,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
 
             <div class="swiper-slide box">
@@ -347,8 +334,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike2.png" alt="">
@@ -361,8 +347,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1450/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             <div class="swiper-slide box">
                 <img src="assets/bike3.png" alt="">
@@ -375,8 +360,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1300/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             
             <div class="swiper-slide box">
@@ -390,8 +374,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
             
             
             <div class="swiper-slide box">
@@ -405,8 +388,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹1800/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
 
             <div class="swiper-slide box">
@@ -420,8 +402,7 @@
                 <i class="fas fa-star"></i>
                 </div>
                 <div class="price">₹2300/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
 
             <div class="swiper-slide box">
@@ -435,8 +416,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹2000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
 
 
             <div class="swiper-slide box">
@@ -450,8 +430,7 @@
                 <i class="fa fa-star-half-alt"></i>
                 </div>
                 <div class="price">₹3000/Day</div>
-                <a href="#" class="btn">Check Out</a>
-            </div>
+                <a href="#" class="btn" id="click" onclick=hmmm(); return false;">Check out</a>            </div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -615,11 +594,21 @@
             <h3>get in touch</h3>
             <input type="text" placeholder="name" class="box">
             <input type="email" placeholder="email" class="box">
-            <input type="number" placeholder="number" class="box">
+            <input type="text" placeholder="number" class="box">
             <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
             <input type="submit" value="send message" class="btn">
         </form>
     </div>
+
+    <div id="contact-component"></div>
+
+    <!-- React component code -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script type="module">
+        import Contact from './contact.js'; // Ensure correct path to contact.js
+        ReactDOM.render(React.createElement(Contact), document.getElementById('contact-component'));
+    </script>
 </section>
 <!-- contact fin -->
 <section class="footer">
@@ -667,7 +656,13 @@
 <div class="end">Made by Group-15 | All rights reserved &copy</div>
 <!-- footer ends -->
 
+<!-- for chat bot -->
 
-
+<div class="chatbot">
+    
+    <iframe src="../proj/Chat bot/chat.html"></iframe>
+    
+</div>
+<div class="gojo"><img src="../proj/assets/gojo.jpeg" id="gojo" onclick=""></div>
 </body>
 </html>

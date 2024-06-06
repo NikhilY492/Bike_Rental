@@ -18,22 +18,21 @@ document.querySelector('#close-sign-form').onclick=() =>{
     document.querySelector('.sign-form-container').classList.remove('active')
     document.querySelector('.login-form-container').classList.remove('active')
 }
-document.getElementById("open-popup-btn").addEventListener("click",function() {
-	const emailInput = document.getElementById('email');
-        const email = emailInput.value;
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-        
-        if (emailPattern.test(email)) {
-            alert('Thank You for subscribing to us look out to your mail for daily updates regarding us.');
-        } else {
-            alert('Please enter a valid email address.');
-        }
-    }
-);
+function login(){
+    var username = document.querySelector('#username').value;
+    var password = document.querySelector('#password').value;
 
-document.getElementById("dismiss-popup-btn").addEventListener("click",function() {
-	document.getElementsByClassName("popup")[0].classList.remove("active");
-})
+    if (username.trim() !== "" && password.trim() !== "") {
+        localStorage.setItem("username", username);
+        window.open('../proj/loggedin.html', '_self');
+    } else {
+        window.alert("username or password is wrong");
+    }
+    return false; // prevent form submission
+}
+function success(){
+    window.alert("Account Created Successfully")
+}
 //swiper starts here//
 
 var swiper = new Swiper (".featured-slider",{
@@ -110,5 +109,10 @@ var swiper = new Swiper (".vehicles-slider",{
             prevEl: ".swiper-button-prev",
         }
         });
-
+function hmmm(){
+    window.alert("User must be logged in to proceed")
+}
 // for payment page
+document.querySelector('#gojo').onclick=() =>{
+    document.querySelector('.chatbot').classList.toggle('active')
+}
