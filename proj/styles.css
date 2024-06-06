@@ -539,9 +539,70 @@ section{
     text-align: center;
 }
 
+.popup {
+	position: fixed;
+    top: 105%;left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
 
+.popup.active {
+    top: 0;
+	opacity: 1;
+}
 
+.popup .icon {
+	width: 50px;
+	height: 50px;
+	margin: 5px 0px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	display: inline-block;
+	border: 2px solid #4b3b47;
+}
 
+.popup .icon i.fa {
+	color: #4b3b47;
+	font-size: 30px;
+}
+.popup .title {
+	margin: 5px 0px;
+	font-size: 30px;
+	font-weight: 600;
+}
+.popup .description {
+	color: #222;
+	padding: 5px;
+	font-size: 15px;
+}
+.popup .dismiss-btn {
+	margin-top: 15px;
+}
+
+.popup .dismiss-btn button {
+	outline: none;
+	color: #e0d8de;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	background: #111;
+	padding: 10px 20px;
+	border-radius: 10px;
+	border: 2px solid #111;
+	transition: all 300ms ease-in-out;
+}
+
+.popup .dismiss-btn button:hover {
+	color: #111;
+	background: #e0d8de;
+}
 
 
 
